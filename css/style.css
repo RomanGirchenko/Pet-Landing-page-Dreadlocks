@@ -1,0 +1,1304 @@
+@font-face {
+    font-family: RobotoCondensed;
+    src: url(../fonts/RobotoCondensed-Bold.otf)
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans-Regular.ttf)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #070707;
+}
+
+h2 {
+    font-family: Roboto;
+}
+
+header {
+    background-color: #070707ae;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 830px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+}
+
+.logo {
+    width: 60px;
+    height: 30px;
+}
+
+.menu {
+    color: white;
+    font-size: 30px;
+}
+
+.menu:hover {
+    cursor: pointer;
+}
+
+.leftmenu {
+    display: flex;
+    flex-direction: column;
+    background-color: #070707ae;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 70px;
+    left: -999px;
+    z-index: 2;
+}
+
+.leftmenu a {
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 20px;
+    color: #ffffff;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px 10px;
+    border-top: 2px solid #9a9a9a;
+}
+
+.leftmenu a:last-child {
+    border-bottom: 2px solid #9a9a9a;
+}
+
+.leftmenu a:hover {
+    color: #9a9a9a;
+}
+
+.intro {
+    width: 920px;
+    height: 745px;
+    background-image: url(../images/header.jpg);
+    background-position: 330px -60px;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    margin: 0 auto;
+    border-top: 80px solid transparent;
+}
+
+h1 {
+    font-family: 'RobotoCondensed';
+    color: #e8bda1;
+    font-size: 70px;
+    width: 370px;
+    margin-top: 80px;
+}
+
+.introtext {
+    color: white;
+    font-size: 16px;
+    font-family: OpenSans;
+    width: 400px;
+    line-height: 1.8;
+    margin-top: 15px;
+}
+
+.service,
+.booknow {
+    width: 130px;
+    height: 40px;
+    border-radius: 5px;
+    font-family: OpenSans;
+    color: white;
+    font-weight: 600;
+    margin-top: 90px;
+}
+
+.service {
+    border: 2px solid white;
+    background-color: rgb(7, 7, 7);
+    margin-right: 20px;
+}
+
+.service:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.booknow {
+    border: none;
+    background-color: #e8bda1;
+}
+
+.booknow:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.services {
+    width: 920px;
+    margin: -50px auto;
+    border-top: 80px solid transparent;
+}
+
+.services h2 {
+    color: #e8bda1;
+    font-size: 52px;
+    text-align: center;
+}
+
+.gallery1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.nameserv {
+    width: 200px;
+    height: auto;
+}
+
+.nameserv img {
+    border: 6px solid #e8bda1;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.nameserv h3 {
+    color: #ffffff;
+    font-family: Roboto;
+    text-align: center;
+    width: 170px;
+    margin: 18px auto 0;
+}
+
+.price {
+    color: #e8bda1;
+    font-family: Roboto;
+    margin: 18px auto 0;
+    text-align: center;
+}
+
+.description {
+    color: rgb(162, 162, 162);
+    font-family: OpenSans;
+    font-style: italic;
+    font-size: 13px;
+    text-align: center;
+    margin: 18px auto 0;
+}
+
+.aboutsalon {
+    width: 920px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    border-top: 80px solid transparent;
+}
+
+.blok1 {
+    width: 480px;
+}
+
+.blok1 h2 {
+    color: white;
+    font-size: 48px;
+}
+
+.text1 {
+    font-family: OpenSans;
+    font-weight: 600;
+    font-size: 19px;
+    color: white;
+    width: 480px;
+    line-height: 1.8;
+    letter-spacing: 1.2px;
+    margin-top: 40px;
+}
+
+.text2 {
+    font-family: OpenSans;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    width: 460px;
+    line-height: 1.8;
+    margin-top: 30px;
+}
+
+.learnmore {
+    width: 130px;
+    height: 40px;
+    border: none;
+    background-color: #e8bda1;
+    border-radius: 5px;
+    font-family: OpenSans;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.learnmore:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.block2 {
+    width: 420px;
+}
+
+.reviews {
+    width: 420px;
+    height: 190px;
+    background-color: #e8bda1;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    padding: 15px 25px;
+}
+
+.fa {
+    color: white;
+    font-size: 30px;
+}
+
+.review {
+    font-family: OpenSans;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+.username {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.book {
+    text-align: center;
+    color: #e8bda1;
+    font-size: 42px;
+    width: 670px;
+    margin: 100px auto 80px;
+}
+
+.gallary {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid {
+    width: 920px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.photo {
+    width: 280px;
+    height: 280px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    display: block;
+}
+
+.black {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.498);
+    transition: 1s;
+    opacity: 0;
+}
+
+.photo:hover img {
+    transform: scale(1.1);
+}
+
+.photo:hover .black {
+    opacity: 1;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.497);
+}
+
+.color {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 1150px;
+    background-color: #e8bda1;
+    top: -390px;
+    left: 0;
+}
+
+.mission {
+    position: relative;
+    width: 920px;
+    margin: auto;
+    margin-bottom: -330px;
+    margin-top: -80px;
+    border-top: 80px solid transparent;
+}
+
+.position {
+    width: 920px;
+    position: absolute;
+    z-index: 1;
+    top: -990px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+#WhoWeAre {
+    border-top: 80px solid transparent;
+    margin-top: -80px;
+}
+
+.photomission {
+    width: 460px;
+    height: 540px;
+    background-image: url(../images/mission.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.textmission {
+    font-family: Roboto;
+    letter-spacing: 5px;
+    font-size: 50px;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.questmaission {
+    width: 420px;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.questmaission h3 {
+    font-family: Roboto;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.questmaission p {
+    font-family: OpenSans;
+    font-size: 16px;
+    font-size: 13.5px;
+    margin-bottom: 30px;
+}
+
+hr {
+    width: 400px;
+    display: inline-block;
+    text-align: end;
+    border: 0.5px solid rgb(115, 115, 115);
+    margin-bottom: 60px;
+}
+
+.whyus {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 920px;
+    margin: 0 auto;
+    border-top: 80px solid transparent;
+}
+
+.textwhy {
+    padding-top: 50px;
+}
+
+.whyus h2 {
+    font-family: Roboto;
+    font-size: 40px;
+}
+
+.whyus img {
+    width: 470px;
+    height: 520px;
+}
+
+.textwhyus1 {
+    font-family: OpenSans;
+    font-weight: 600;
+    font-size: 19px;
+    color: white;
+    width: 360px;
+    line-height: 1.8;
+    letter-spacing: 1.2px;
+    margin-top: 40px;
+}
+
+.textwhyus2 {
+    font-family: OpenSans;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    width: 390px;
+    line-height: 1.8;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.colorblock {
+    position: absolute;
+    z-index: -1;
+    top: 3980px;
+    right: 0;
+    width: 450px;
+    height: 410px;
+    background-color: #e8bda1;
+}
+
+
+
+.visitus {
+    width: 100%;
+    background-color: #e8bda1;
+    margin-top: 120px;
+    padding: 60px 0;
+    border-top: 80px solid transparent;
+}
+
+.visit {
+    width: 920px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.visitimg {
+    width: 430px;
+    height: 450px;
+    background-image: url(../images/visitus.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 100% 100%;
+}
+
+.textvisitus {
+    padding-top: 30px;
+}
+
+.textvisitus h2 {
+    color: #000;
+    font-size: 40px;
+}
+
+.textvisitus p {
+    width: 205px;
+    font-family: OpenSans;
+    margin-top: 20px;
+}
+
+.textvisitus h3 {
+    font-family: Roboto;
+    margin-top: 20px;
+}
+
+footer {
+    width: 920px;
+    background-image: url(../images/contactus.jpg);
+    background-repeat: no-repeat;
+    background-size: 135%;
+    background-position: 60% 50%;
+    background-color: #07070798;
+    background-blend-mode: multiply;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: auto;
+    padding: 80px 0;
+    border-top: 80px solid transparent;
+}
+
+.contacts h2 {
+    font-size: 40px;
+    margin-bottom: 70px;
+}
+
+.contacts span {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.contacts p {
+    font-family: OpenSans;
+    font-size: 14px;
+    margin: 20px 0 30px;
+    width: 335px;
+}
+
+form {
+    width: 450px;
+    padding: 30px 10px;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    outline: none;
+    color: white;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #9a9a9a;
+}
+
+#inpem {
+    width: 200px;
+    height: 45px;
+    padding-left: 10px;
+}
+
+#inpnam {
+    width: 200px;
+    height: 45px;
+    padding-left: 10px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+#inpadd {
+    width: 424px;
+    height: 45px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+
+textarea {
+    width: 424px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    outline: none;
+    color: white;
+}
+
+label {
+    font-family: Roboto;
+    font-weight: 600;
+}
+
+#lblnam {
+    margin-left: 180px;
+}
+
+form button {
+    width: 424px;
+    height: 45px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    background-color: #e8bda1;
+    border-radius: 10px;
+    border: none;
+}
+
+form button:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+    header {
+        gap: 680px;
+    }
+
+    .intro {
+        width: 770px;
+        background-position: 270px -60px;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    .introtext {
+        width: 375px;
+    }
+
+    .services {
+        width: 770px;
+    }
+
+    .nameserv {
+        width: 160px;
+        height: auto;
+    }
+
+    .nameserv img {
+        width: 155px;
+        height: 155px;
+    }
+
+    .aboutsalon {
+        width: 770px;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .blok1 {
+        width: 330px;
+    }
+
+    .text1 {
+        width: 100%;
+    }
+
+    .text2 {
+        width: 100%;
+    }
+
+    .block2 {
+        width: 360px;
+    }
+
+    .reviews {
+        width: 360px;
+    }
+
+    .grid {
+        width: 770px;
+    }
+
+    .photo {
+        width: 230px;
+        height: 230px;
+    }
+
+    .mission {
+        width: 770px;
+    }
+
+    .position {
+        width: 770px;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .photomission {
+        width: 390px;
+        height: 440px;
+    }
+
+    .questmaission {
+        padding-top: 20px;
+        width: 390px;
+    }
+
+    .questmaission h3 {
+        font-size: 20px;
+    }
+
+    .questmaission p {
+        font-size: 14px;
+    }
+
+    .whyus {
+        width: 770px;
+    }
+
+    .textwhyus1 {
+        width: 295px;
+    }
+
+    .textwhyus2 {
+        width: 290px;
+    }
+
+    .whyus img {
+        width: 430px;
+        height: 470px;
+    }
+
+    .colorblock {
+        top: 3970px;
+        right: 0;
+        width: 380px;
+        height: 340px;
+    }
+
+    .visit {
+        width: 770px;
+        gap: 40px;
+    }
+
+    .visitimg {
+        width: 380px;
+        height: 440px;
+    }
+
+    footer {
+        width: 770px;
+        gap: 35px;
+    }
+
+    form {
+        width: 390px;
+    }
+
+    #inpem,
+    #inpnam {
+        width: 169px;
+    }
+
+    #inpadd,
+    textarea,
+    form button {
+        width: 364px;
+    }
+}
+
+@media screen and (max-width: 792px) {
+    header {
+        gap: 490px;
+    }
+
+    .intro {
+        width: 575px;
+        background-size: 75% 85%;
+        background-position: 199px 115px;
+    }
+
+    .service,
+    .booknow {
+        margin-top: 40px;
+    }
+
+    .services {
+        width: 575px;
+    }
+
+    .gallery1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin-top: 60px;
+    }
+
+    .nameserv {
+        margin: 0 auto;
+        width: 275px;
+    }
+
+    .nameserv h3 {
+        width: 200px;
+    }
+
+    .description {
+        margin-bottom: 60px;
+    }
+
+    .aboutsalon {
+        width: 575px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .blok1,
+    .block2 {
+        width: 575px;
+    }
+
+    .reviews {
+        width: 575px;
+    }
+
+    .book {
+        width: 545px;
+    }
+
+    .grid {
+        width: 575px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .photo {
+        width: 260px;
+        height: 260px;
+    }
+
+    .color {
+        height: 1380px;
+        top: -650px;
+    }
+
+    .mission {
+        width: 575px;
+        margin-bottom: -750px;
+    }
+
+    .position {
+        width: 575px;
+        top: -1250px;
+    }
+
+    .questmaission,
+    hr {
+        width: 260px;
+    }
+
+    .photomission {
+        width: 350px;
+        height: 540px;
+        background-repeat: no-repeat;
+        background-size: 145% 100%;
+        background-position: 50% 100%;
+    }
+
+    .whyus {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 575px;
+        margin-top: 50px;
+    }
+
+    .textwhy {
+        padding-top: 10px;
+        padding-left: 20px;
+        width: 575px;
+    }
+
+    .textwhyus1,
+    .textwhyus2 {
+        width: 550px;
+    }
+
+    .colorblock {
+        top: 5450px;
+        width: 450px;
+        height: 410px;
+    }
+
+    .whyus img {
+        width: 450px;
+        height: 490px;
+        margin-top: 60px;
+    }
+
+    .visit {
+        width: 575px;
+        margin: 0 auto;
+        gap: 30px;
+    }
+
+    .visitimg {
+        width: 290px;
+        height: 460px;
+        background-size: 140%;
+        background-position: 57% 100%;
+    }
+
+    footer {
+        width: 575px;
+    }
+
+    .contacts p {
+        width: 250px;
+    }
+
+    form {
+        width: 302px;
+    }
+
+    #inpem,
+    #inpnam {
+        width: 129px;
+    }
+
+    #inpadd,
+    textarea,
+    form button {
+        width: 282px;
+    }
+
+    #lblnam {
+        margin-left: 110px;
+    }
+}
+
+@media screen and (max-width:612px) {
+    header {
+        gap: 345px;
+    }
+
+    .intro {
+        width: 440px;
+        height: 980px;
+        background-position: 35px 380px;
+        background-repeat: no-repeat;
+        background-size: 85% 58%;
+    }
+
+    .introtext {
+        width: 430px;
+    }
+
+    .services {
+        width: 440px;
+    }
+
+    .gallery1 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        margin-top: 60px;
+    }
+
+    .aboutsalon {
+        width: 440px;
+        margin-top: 50px;
+    }
+
+    .blok1 {
+        width: 440px;
+    }
+
+    .block2 {
+        width: 440px;
+    }
+
+    .reviews {
+        width: 440px;
+    }
+
+    .book {
+        width: 400px;
+    }
+
+    .grid {
+        width: 440px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .photo {
+        width: 430px;
+        height: 430px;
+    }
+
+    .color {
+        height: 3120px;
+        top: -2000px;
+    }
+
+    .mission {
+        width: 440px;
+        margin-bottom: -2030px;
+    }
+
+    .position {
+        width: 440px;
+        top: -2970px;
+        flex-direction: column;
+    }
+
+    .questmaission,
+    hr {
+        width: 440px;
+    }
+
+    .photomission {
+        width: 430px;
+        height: 510px;
+        background-size: 100% 100%;
+    }
+
+    .whyus {
+        width: 440px;
+    }
+
+    .textwhy {
+        width: 440px;
+    }
+
+    .textwhyus1,
+    .textwhyus2 {
+        width: 420px;
+    }
+
+    .whyus img {
+        width: 440px;
+        height: 480px;
+    }
+
+    .colorblock {
+        top: 8971px;
+        width: 400px;
+        height: 345px;
+    }
+
+    .visitus {
+        padding: 10px 0;
+    }
+
+    .visit {
+        width: 440px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .visitimg {
+        width: 420px;
+        height: 360px;
+        background-size: 100%;
+        background-position: 100% 47%;
+    }
+
+    .textvisitus p {
+        width: 400px;
+    }
+
+    footer {
+        width: 440px;
+        flex-direction: column;
+        background-size: 185%;
+        padding: 0;
+    }
+
+    .contacts p {
+        width: 400px;
+    }
+
+    form {
+        width: 440px;
+    }
+
+    #inpem,
+    #inpnam {
+        width: 190px;
+
+    }
+
+    #inpadd,
+    textarea,
+    form button {
+        width: 405px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    header {
+        gap: 180px;
+    }
+
+    .intro {
+        width: 280px;
+        height: 820px;
+        background-position: 0px 393px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    h1 {
+        font-size: 30px;
+        width: 273px;
+        margin-top: 70px;
+    }
+
+    .introtext {
+        width: 280px;
+    }
+
+    .booknow {
+        margin-top: 25px;
+    }
+
+    .services {
+        width: 280px;
+    }
+
+    .services h2 {
+        font-size: 30px;
+    }
+
+    .aboutsalon {
+        width: 280px;
+    }
+
+    .fa {
+        font-size: 24px;
+    }
+
+    .username {
+        margin-top: 10px;
+    }
+
+    .blok1, .block2, .reviews {
+        width: 280px;
+    } 
+
+    .book {
+        width: 280px;
+        font-size: 30px;
+    }
+
+    .grid {
+        width: 280px;
+    }
+
+    .photo {
+        width: 280px;
+        height: 280px;
+    }
+
+    .color {
+        height: 2100px;
+        top: -1090px;
+    }
+
+    .mission {
+        width: 280px;
+        margin-bottom: -1200px;
+    }
+
+    .position {
+        width: 280px;
+        top: -1950px;
+        flex-direction: column;
+    }
+
+    .questmaission,
+    hr {
+        width: 280px;
+    }
+
+    .photomission {
+        width: 280px;
+        height: 310px;
+        background-size: 100% 100%;
+    }
+
+    .whyus {
+        width: 280px;
+    }
+
+    .textwhy {
+        width: 280px;
+    }
+
+    .textwhyus1,
+    .textwhyus2 {
+        width: 260px;
+    }
+
+    .whyus img {
+        width: 280px;
+        height: 320px;
+    }
+
+    .colorblock {
+        top: 7990px;
+        width: 320px;
+        height: 210px;
+    }
+
+    .visit {
+        width: 280px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .visitimg {
+        width: 280px;
+        height: 280px;
+        background-size: 100%;
+        background-position: 100% 47%;
+    }
+
+    .textvisitus p {
+        width: 240px;
+    }
+
+    footer {
+        width: 100%;
+        flex-direction: column;
+        background-size: 340%;
+        background-position: 50% 100%;
+        padding: 0;
+    }
+
+    .contacts {
+        width: 280px;
+        margin: auto;
+    }
+
+    .contacts p {
+        width: 280px;
+    }
+
+    form {
+        width: 280px;
+        margin: auto;
+    }
+
+    #inpem,
+    #inpnam {
+        width: 250px;
+    }
+
+    #inpem {
+        margin-bottom: 50px;
+    }
+
+    #inpnam {
+        margin-left: 0;
+    }
+
+    #lblnam {
+        position: relative;
+        top: 90px;
+        left: -155px;
+
+    }
+
+    #inpadd,
+    textarea,
+    form button {
+        width: 260px;
+    }
+}
